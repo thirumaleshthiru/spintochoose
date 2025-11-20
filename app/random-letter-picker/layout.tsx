@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Random Letter Generator - Free Alphabet Picker',
     description: 'Generate random letters instantly. Choose uppercase, lowercase, exclude letters. Perfect for games, education, and creative projects.',
-    url: 'https://www.spintochoose.com/randome-letter-picker',
+    url: 'https://www.spintochoose.com/random-letter-picker',
     type: 'website',
   },
   twitter: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'Free random letter generator with customizable options. Generate truly random letters for games, education, and more.',
   },
   alternates: {
-    canonical: 'https://www.spintochoose.com/randome-letter-picker',
+      canonical: 'https://www.spintochoose.com/random-letter-picker',
   },
 };
 
@@ -44,7 +44,7 @@ export default function RandomLetterPickerLayout({
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
             name: 'Random Letter Generator',
-            url: 'https://www.spintochoose.com/randome-letter-picker',
+            url: 'https://www.spintochoose.com/random-letter-picker',
             description: 'A free random letter generator that helps you pick random letters from A to Z. Customize your options, exclude specific letters, choose uppercase or lowercase, and get truly random results instantly.',
             applicationCategory: 'Utility',
             operatingSystem: 'Web',

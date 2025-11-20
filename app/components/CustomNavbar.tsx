@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { CircleDot, Shuffle, Text, Menu, X, Trophy } from 'lucide-react';
+import { CircleDot, Shuffle, Text, Menu, X, Trophy, Utensils, Palette } from 'lucide-react';
 
 function CustomNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,31 +35,41 @@ function CustomNavbar() {
       name: 'IPL Team Random Picker',
       icon: Trophy,
     },
+    {
+      path: '/random-food-picker',
+      name: 'Random Food Picker',
+      icon: Utensils,
+    },
+    {
+      path: '/random-color-palette-generator',
+      name: 'Color Palette',
+      icon: Palette,
+    },
   ];
 
   return (
     <nav className="bg-white border-b border-gray-100 z-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-full mx-auto px-4">
+        <div className="flex md:justify-around justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-lg font-semibold text-blue-600">SpinToChoose</span>
+              <span className="text-2xl font-semibold text-blue-600">SpinToChoose</span>
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
             {mainNavItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-colors ${
+                className={`flex items-center space-x-1 px-2 py-2 rounded-lg transition-colors whitespace-nowrap ${
                   pathname === item.path
                     ? 'bg-blue-50 text-blue-600'
                     : 'text-gray-600 hover:bg-gray-50'
                 }`}
               >
-                <item.icon className="w-5 h-5" />
-                <span>{item.name}</span>
+                <item.icon className="w-4 h-4 flex-shrink-0" />
+                <span className="text-sm">{item.name}</span>
               </Link>
             ))}
           </div>

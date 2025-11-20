@@ -52,6 +52,16 @@ const Footer = () => {
                   Random Letter Generator
                 </Link>
               </li>
+              <li>
+                <Link href="/random-food-picker" className="hover:text-orange-500 transition flex items-center gap-2">
+                  Random Food Picker
+                </Link>
+              </li>
+              <li>
+                <Link href="/random-color-palette-generator" className="hover:text-orange-500 transition flex items-center gap-2">
+                  Color Palette Generator
+                </Link>
+              </li>
             </ul>
           </div>
 
