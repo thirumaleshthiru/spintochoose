@@ -62,6 +62,11 @@ const Footer = () => {
                   Color Palette Generator
                 </Link>
               </li>
+              <li>
+                <Link href="/spin-the-bottle" className="hover:text-orange-500 transition flex items-center gap-2">
+                  Spin the Bottle
+                </Link>
+              </li>
             </ul>
           </div>
 

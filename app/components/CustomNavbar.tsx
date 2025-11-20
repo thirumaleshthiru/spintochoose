@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { CircleDot, Shuffle, Text, Menu, X, Trophy, Utensils, Palette } from 'lucide-react';
+import { CircleDot, Shuffle, Text, Menu, X, Trophy, Utensils, Palette, Users } from 'lucide-react';
 
 function CustomNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +44,11 @@ function CustomNavbar() {
       path: '/random-color-palette-generator',
       name: 'Color Palette',
       icon: Palette,
+    },
+    {
+      path: '/spin-the-bottle',
+      name: 'Spin the Bottle',
+      icon: Users,
     },
   ];
 
